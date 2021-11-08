@@ -1,1 +1,1 @@
-docker container run -d -it --name 02images nginx:1.21.3-alpine
+docker container run -d -it --name 02images -p 3000:3000 nginx:1.21.3-alpine
