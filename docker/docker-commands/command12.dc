@@ -1,1 +1,1 @@
-docker-compose up ./todo-app
+docker-compose up -d
