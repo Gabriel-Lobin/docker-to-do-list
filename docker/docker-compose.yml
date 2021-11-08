@@ -7,14 +7,14 @@ services:
       - "back"
       - "front"
     environment:
-      - FRONT_HOST=back
+      - FRONT_HOST=todobackend
   front:
     image: todofrontend
     restart: always
     ports:
       - 3000:3000
     environment:
-      - REACT_APP_API_HOST=back
+      - REACT_APP_API_HOST=todobackend
     depends_on:
       - "back"
   back:
