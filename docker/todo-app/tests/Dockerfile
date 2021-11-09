@@ -1,5 +1,5 @@
 FROM mjgargani/puppeteer:trybe1.0
 WORKDIR /usr/src/app
-ADD node_modules.tar.gz .
 COPY . .
+ADD ./node_modules.tar.gz ./
 ENTRYPOINT ["npm" ,"test"]
