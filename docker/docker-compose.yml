@@ -12,7 +12,7 @@ services:
     environment:
       - REACT_APP_API_HOST=back      
     depends_on:
-      - "todoback"
+      - "back"
     ports:
       - 3000:3000
   back:
